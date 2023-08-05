@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    /* background-image: url(images.jpg); */
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar{
+    background-color: darkgreen;
+    text-align: center;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    color: aliceblue;
+    list-style: none;    
+}
+
+.menu-bar ul li{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.active , .menu-bar ul li:hover{
+    background-color: #2bab0d;
+    border-radius: 3px;
+}
+
+.menu-bar .fa-solid{
+    margin-right: 8px;
+    
+}
+.sub-menu-1{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background:darkgreen;
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    margin-top:-40px;
+    margin-left: 140px;
+    background-color: darkgreen;
+}
+
+.ser{
+    float: right;
+    /* margin-left: 200px; */
+    margin-top: 29px;
+    margin-right: 14px
+}
+
+#add{
+    border:2px solid black;
+    height: 251px;
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-right: 39px;
+    background-color: rgb(17, 53, 41);
+    position: fixed;
+    
+}
+#ins{
+    margin-top: 15px;
+    width: 61px;
+    height: 23px;
+    margin-left: 11px;
+}
+#text1{
+    margin-left: 27px;
+    margin-top: 13px;
+}
+#dis{
+    height: 193px;
+    width: 237px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin-left: 31px;
+    overflow: auto;
+    
+}
+#list{
+    color:#fff;
+    margin-top:5px;
+    margin-left: 80px;
+    list-style: none;
+}
